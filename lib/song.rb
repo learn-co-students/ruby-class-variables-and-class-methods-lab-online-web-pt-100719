@@ -28,10 +28,9 @@ class Song
   end
   
   def self.genre_count
-    gen = ||= []
-    @@genres.each do |g|
-    gen[g].uniq = g.count 
-      
+    gen ||= {}
+    gen[genres] = genre.each do |g|
+    
   binding.pry
     end
   end
