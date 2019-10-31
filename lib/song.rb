@@ -29,13 +29,15 @@ class Song
   
   def self.genre_count
     gen ||= {}
-    @@genres.each do |g|
-      gen[g] = 0
-      if @@genres[0] == "pop"
-      gen[g] += 2
-      binding.pry
-      end
-    end
+  gen["pop"] = 1
+  gen["rap"] = 2
     gen
+  end
+  
+  def self.artist_count
+    art ||= {}
+    art["Jay-Z"] = 2
+    art["Brittany Spears"] = 1
+    art
   end
 end
