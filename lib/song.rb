@@ -2,8 +2,8 @@ require 'pry'
 class Song 
   
   @@count = 0
-  @@artists 
-  @@genres
+  @@artists = []
+  @@genres  = [] 
   
   def self.count
     @@count 
@@ -11,10 +11,10 @@ class Song
   
   def self.artists
     @@artists 
-    # binding.pry
-  end 
+    end 
  
- attr_accessor :name, :artist, :genre
+ attr_accessor :name, :artist, :genre, :artists
+
  
   def initialize(name, artist, genre)
   @name = name
@@ -23,10 +23,6 @@ class Song
   @@count +=1 
   @@artists = [self].flatten
   end 
-  
-  
- 
-  
   
 end 
 
