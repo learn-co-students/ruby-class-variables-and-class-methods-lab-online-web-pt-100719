@@ -24,8 +24,8 @@ class Song
   @artist = artist
   @genre = genre 
   @@count +=1 
-  @@artists = [self].flatten
-  @@genres 
+  @@artists << self.artist 
+  @@genres << self
   end 
   
 end 
