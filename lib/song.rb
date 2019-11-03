@@ -25,6 +25,7 @@ class Song
   @genre = genre 
   @@count +=1 
   @@artists = [self].flatten
+  @@genres 
   end 
   
 end 
