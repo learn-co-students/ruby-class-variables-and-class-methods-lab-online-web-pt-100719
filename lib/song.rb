@@ -10,11 +10,25 @@ class Song
   end 
   
   def self.artists
-    @@artists
+    @@artists.uniq
     end 
  
  def self.genres
+   @@genres.uniq
  end
+ 
+ def self.genre_count
+   genre_count = {}
+   genre_count.each do |key, value|
+    
+    end 
+ end 
+ 
+ def self.artist_count
+   artist_count= {}
+   artist_count.each do |key,value| 
+    end
+ end 
  
  attr_accessor :name, :artist, :genre, :artists
 
