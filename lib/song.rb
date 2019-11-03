@@ -13,6 +13,9 @@ class Song
     @@artists 
     end 
  
+ def self.genres
+ end
+ 
  attr_accessor :name, :artist, :genre, :artists
 
  
