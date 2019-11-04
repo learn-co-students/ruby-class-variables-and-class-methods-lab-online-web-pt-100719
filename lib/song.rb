@@ -18,17 +18,18 @@ class Song
  end
  
  def self.genre_count
-   genre_count = {}
-   genre_count.each do |key, value|
-    
-    end 
+   genre_count = Hash.new(0)
+   @@genres.each {|genre| genre_count[genre]+=1}
+   genre_count
  end 
  
  def self.artist_count
-   artist_count= {}
-   artist_count.each do |key,value| 
-    end
- end 
+  artist_count = Hash.new(0)
+  @@artists.each { |artist| artist_count[artist]+=1}
+  artist_count
+  
+  end
+ 
  
  attr_accessor :name, :artist, :genre, :artists
 
